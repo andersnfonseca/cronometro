@@ -1,0 +1,43 @@
+body {
+    background-color: rgb(39, 18, 46);
+}
+* {
+    margin: 0 auto;
+    padding: 0;
+}
+
+.cronometro {
+    max-width: 900px;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-top: 10%;
+    text-align: center;
+}
+
+#contador {
+    font-family: 'Montserrat';
+    margin: 50px;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-family: 'Segoe UI';
+    font-size: 1.1em;
+    transition: linear all 0.5s;
+    cursor: pointer;
+    border-radius: 25px;
+}
+
+button:hover {
+    background-color:rgba(117, 8, 150, 0.692);
+    color: whitesmoke;
+}
+
+h1 {
+    color: whitesmoke;
+    font-size: 100px;
+    text-shadow: thistle;
+}
