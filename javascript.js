@@ -7,17 +7,13 @@ var segundos = 0;
 var tempo = 1000; 
 var cronometro; 
 
-function desativarStar() {
-    document.getElementById("play").innerHTML = "<button id='play' onclick='start()'; disabled = 'true'>Iniciar</button>"
-}
-
-function ativarStart() {
-    document.getElementById("play").innerHTML = "<button id='play' onclick='start();'>Iniciar</button>"
+function desativarStart() {
+    document.getElementById("play").innerHTML = "<button id='play' onclick='start();' enabled = 'false'>Iniciar</button>"
 }
 
 function start() {
     cronometro = setInterval(() => { timer(); }, tempo);
-    desativarStar();
+    // desativarStart();
 }
 
 function pause() {
@@ -31,6 +27,7 @@ function stop() {
     segundos = 0;
 
     document.getElementById("contador").innerText = "00:00:00";
+    location.reload();
     
 }
 
